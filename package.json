@@ -4,11 +4,8 @@
   "scripts": {
     "build": "rm -rf lib && tsc",
     "init": "node db/init.js",
-    "db:migrate": "npx sqd db migrate",
-    "schema:reset": "",
-    "processor:migrate": "echo skip",
-    "processor:start": "node lib/processor.js",
-    "query-node:start": "squid-graphql-server"
+    "proc-balances": "node lib/processor.js",
+    "api": "squid-graphql-server"
   },
   "dependencies": {
     "@subsquid/cli": "^0.1.2",
